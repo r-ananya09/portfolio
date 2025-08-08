@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rathod Ananya | Robotic Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background-color: #000;
+      color: #66fcf1;
+      line-height: 1.6;
+    }
+    header, footer, .project-card, form input, form textarea {
+      background: #111;
+    }
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 20px #45a29e;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: #c5c6c7;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66fcf1;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .glow-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #66fcf1, 0 0 20px #45a29e;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #45a29e;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .glow-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #66fcf1;
+      color: #66fcf1;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .glow-btn:hover {
+      background-color: #66fcf1;
+      color: #0b0c10;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #66fcf1;
+      color: #fff;
+      border-radius: 8px;
+    }
+    form button {
+      background-color: #66fcf1;
+      color: #000;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #c5c6c7;
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 3px solid #66fcf1;
+      padding-left: 1rem;
+      color: #c5c6c7;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rathod Ananya</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="https://docs.google.com/document/d/1TWzjvz0XTsSdAwfSHNOYOZPCMDYdLwrNkqQecrdLVOo/edit?usp=drive_link" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2 class="glow-title">Hello, I’m Rathod Ananya</h2>
+    <p>An AI-powered Web Developer with a passion for futuristic UI/UX, automation, and next-gen experiences. Ready to serve intelligent designs that work!</p>
+  </section>
+
+  <section id="about">
+    <h2 class="glow-title">👩‍💻 About Me</h2>
+    <p>I'm Rathod Ananya — a dedicated AI-based Web Developer from Hyderabad. I’ve worked on real-world freelance and internship projects that sharpened my problem-solving skills. I blend design with logic and futuristic concepts with functional code.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="glow-title">🧠 Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, XML</li>
+      <li>AI Tools & Prompt Engineering</li>
+      <li>Responsive Web & App Design</li>
+      <li>API Integration & Automation</li>
+      <li>Technical Writing & Content Creation</li>
+      <li>Video Editing, UX Copywriting</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="glow-title">🚀 Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>AI Image Generator</h3>
+        <p>A web app that uses Stable Diffusion and DALL·E to generate images from user prompts. Includes prompt history and multiple image styles.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JS, Stable Diffusion API, DALL·E</p>
+        <a href="#" class="glow-btn">Live Demo</a>
+        <a href="#" class="glow-btn">Source Code</a>
+        <div class="container">
+          <h1>🧠 AI Image Generator</h1>
+          <p>Enter a prompt and generate images using OpenAI's DALL·E!</p>
+          <input type="text" id="promptInput" placeholder="e.g., a futuristic city with flying cars"/>
+          <button onclick="generateImage()">Generate</button>
+          <div id="imageContainer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="glow-title">📜 Certifications</h2>
+    <ul>
+      <li>AI for Everyone – Coursera</li>
+      <li>Web Development Internship – Upwork</li>
+      <li>Frontend Development – Internshala</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="glow-title">🌟 Testimonials</h2>
+    <blockquote>
+      “Ananya’s attention to detail and futuristic design thinking really impressed us. She’s quick, creative, and reliable.”
+      <br><span>- Client from Upwork</span>
+    </blockquote>
+  </section>
+
+  <section id="contact">
+    <h2 class="glow-title">📬 Contact Me</h2>
+    <form action="mailto:rathodananya30@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>👾 Designed by Rathod Ananya | Robotic Portfolio 2.0</p>
+  </footer>
+</body>
+</html>
