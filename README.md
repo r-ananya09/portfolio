@@ -183,7 +183,6 @@
     </blockquote>
   </section>
 
-    <!-- Contact Section -->
   <section id="contact">
     <h2 class="glow-title">📬 Contact Me</h2>
     <form action="https://formspree.io/f/yourFormID" method="POST">
@@ -201,7 +200,7 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  
   <footer>
 
   <p>👾 Designed by Rathod Ananya | Robotic Portfolio 2.0</p>
